@@ -1,1 +1,2 @@
 Gemfile.lock
+test/acts_as_xlsx.sqlite3.db

@@ -61,20 +61,16 @@ module Axlsx
         row_style = p.workbook.styles.add_style(row_style) unless row_style.nil?
         header_style = p.workbook.styles.add_style(header_style) unless header_style.nil?
         i18n = self.xlsx_i18n == true ? 'activerecord.attributes' : i18n
-        sheet_name = options.delete(:name) || (i18n ? I18n.t("#{i18n}.#{table_name.underscore}") : table_name.humanize) 
-        if Rails.version[0] >= '4'
-          data = options.delete(:data) || where(options[:where]).order(options[:order]).to_a
-        else
-          data = options.delete(:data) || [*find(:all, options)]
-        end
-        data.compact!
-        data.flatten!
+        sheet_name = options.delete(:name) || (i18n ? (self.xlsx_i18n == true ? self.model_name.human : I18n.t("#{i18n}.#{table_name.underscore}")) : table_name.humanize) 
+        data = options.delete(:data) || where(options[:where]).order(options[:order]).to_a
+        data = data.compact.flatten
+
 
         return p if data.empty?
         p.workbook.add_worksheet(:name=>sheet_name) do |sheet|
           
           col_labels = if i18n
-                         columns.map { |c| I18n.t("#{i18n}.#{self.name.underscore}.#{c}") }                         
+                         columns.map { |c| self.xlsx_i18n == true ? self.human_attribute_name(c) : I18n.t("#{i18n}.#{self.name.underscore}.#{c}") }                         
                        else
                          columns.map { |c| c.to_s.humanize }
                        end
