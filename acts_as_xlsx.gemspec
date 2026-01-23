@@ -6,10 +6,9 @@ Gem::Specification.new do |s|
   s.authors	= ["Randy Morgan", "Noel Peden"]
   s.email       = 'noel@peden.biz'
   s.homepage 	= 'https://github.com/caxlsx/acts_as_caxlsx'
-  s.platform    = Gem::Platform::RUBY       	     	  
+  s.platform    = Gem::Platform::RUBY
   s.date        = Time.now.strftime('%Y-%m-%d')
   s.summary     = "ActiveRecord support for Axlsx"
-  s.has_rdoc    = 'acts_as_xlsx'
   s.description = <<-eof
     acts_as_xlsx lets you turn any ActiveRecord::Base inheriting class into an excel spreadsheet.
     It can be added to any finder method or scope chain and can use localized column and sheet names with I18n.
@@ -20,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'caxlsx', '>= 3.0.0'
   s.add_runtime_dependency 'activerecord', '>= 2.3.9'
   s.add_runtime_dependency 'i18n', '>= 0.4.1'
-  
+
   if RUBY_VERSION == "2.0.0"
     s.add_development_dependency 'rake'
     s.add_development_dependency 'minitest'
