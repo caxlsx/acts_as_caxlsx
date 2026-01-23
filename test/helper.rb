@@ -46,9 +46,9 @@ class Post < ActiveRecord::Base
   acts_as_xlsx
   has_many :comments
   def ranking
-    a = Post.find(:all, :order =>"votes desc")      
+    a = Post.order("votes desc").to_a
     a.index(self) + 1
-  end  
+  end
   def last_comment
     self.comments.last.content
   end
