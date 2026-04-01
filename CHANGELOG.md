@@ -2,7 +2,12 @@ CHANGELOG
 ---------
 
 - **Unreleased**
+
+
+- **April.7.26**: 1.0.10
   - Add Github CI with modern Ruby versions
+  - Use Rubygem's trusted publishing
+  - Compability fixes
 
 - **July.27.12**: 1.0.6
   - conditionaly register XLSX mime type

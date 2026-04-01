@@ -1,6 +1,6 @@
 module Axlsx
   module Ar
     # The current version of the gem
-    VERSION = "1.0.9"
+    VERSION = "1.0.10"
   end
 end
