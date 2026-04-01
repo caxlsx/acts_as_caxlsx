@@ -1,6 +1,8 @@
-# Acts as XLSX
+# Acts as Caxlsx
 
-[![Build Status](https://secure.travis-ci.org/caxlsx/acts_as_caxlsx.png)](http://travis-ci.org/caxlsx/acts_as_caxlsx/)
+[![Test](https://github.com/caxlsx/acts_as_caxlsx/actions/workflows/test.yml/badge.svg)](https://github.com/caxlsx/acts_as_caxlsx/actions/workflows/test.yml)
+[![Gem Version](https://badge.fury.io/rb/acts_as_caxlsx.svg)](https://badge.fury.io/rb/acts_as_caxlsx)
+![downloads](https://img.shields.io/gem/dt/acts_as_caxlsx?label=downloads)
 
 ## Notice: Community Axlsx Organization
 
@@ -12,7 +14,7 @@ http://github.com/caxlsx
 
 ## Synopsis
 
-Acts_as_xlsx is an active record plugin for automatic Office Open XML Spreadsheet Generation using Axlsx. It makes generating excel spreadsheets from any subclass of ActiveRecord::Base as simple as a couple of lines of code.
+Acts_as_caxlsx is an active record plugin for automatic Office Open XML Spreadsheet Generation using Caxlsx. It makes generating excel spreadsheets from any subclass of ActiveRecord::Base as simple as a couple of lines of code.
 
 ## Feature List
 
@@ -26,13 +28,11 @@ Acts_as_xlsx is an active record plugin for automatic Office Open XML Spreadshee
 
 5. Lets you specify columns and methods chains you want to call to populate your table in one go.
 
-6. Gives you access to the axlsx package so you can add styles, charts and pictures to satisfy those flashy sales guys.
-
-7. Plays nicely with both ruby 1.8.7 + rails 2.3 as well as ruby 1.9.3 + rails 3
+6. Gives you access to the Caxlsx package so you can add styles, charts and pictures to satisfy those flashy sales guys.
 
 8. Automatically registers xlsx Mime type for use in respond_to web-service support.
 
-9. Allows you to specify the Axlsx package to add your data to so you can create a single workbook with a sheet for each to_xlsx call.
+9. Allows you to specify the Caxlsx package to add your data to so you can create a single workbook with a sheet for each to_xlsx call.
 
 
 ## Install
@@ -40,7 +40,7 @@ Acts_as_xlsx is an active record plugin for automatic Office Open XML Spreadshee
 To install, add the following to your Gemfile:
 
 ```ruby
-gem 'acts_as_xlsx', git: 'https://github.com/caxlsx/acts_as_xlsx.git'
+gem 'acts_as_caxlsx'
 ```
 
 
@@ -56,7 +56,7 @@ The following Usage guides need to be extracted and added to this README
 
 Detailed documentation is available at:
 
-[https://www.rubydoc.info/gems/acts_as_xlsx/](https://www.rubydoc.info/gems/acts_as_xlsx/)
+[https://www.rubydoc.info/gems/acts_as_caxlsx/](https://www.rubydoc.info/gems/acts_as_caxlsx/)
 
 
 ## Credits
@@ -65,4 +65,4 @@ Originally created by Randy Morgan - @randym
 
 Forked in 2019, to enable the community to maintain the Axlsx ecosystem - http://github.com/caxlsx
 
-Open source software is a community effort. None of this could have been done without the help of [our Contributors](https://github.com/caxlsx/acts_as_xlsx/graphs/contributors).
+Open source software is a community effort. None of this could have been done without the help of [our Contributors](https://github.com/caxlsx/acts_as_caxlsx/graphs/contributors).
