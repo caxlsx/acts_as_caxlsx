@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.authors	= ["Randy Morgan", "Noel Peden"]
   s.email       = 'noel@peden.biz'
   s.homepage 	= 'https://github.com/caxlsx/acts_as_caxlsx'
-  s.platform    = Gem::Platform::RUBY       	     	  
+  s.platform    = Gem::Platform::RUBY
   s.date        = Time.now.strftime('%Y-%m-%d')
   s.summary     = "ActiveRecord support for Axlsx"
   # s.has_rdoc    = 'acts_as_xlsx'
@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'caxlsx', '>= 3.0.0'
   s.add_runtime_dependency 'activerecord', '>= 3.0'
   s.add_runtime_dependency 'i18n', '>= 0.4.1'
-  
-  s.required_ruby_version = '>= 2.3'
+
+  s.required_ruby_version = '>= 2.6'
   s.require_path = 'lib'
 end

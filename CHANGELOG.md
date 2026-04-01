@@ -1,6 +1,9 @@
 CHANGELOG
 ---------
 
+- **Unreleased**
+  - Add Github CI with modern Ruby versions
+
 - **July.27.12**: 1.0.6
   - conditionaly register XLSX mime type
 
